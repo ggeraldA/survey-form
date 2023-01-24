@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="container">
+    <div class="description">
+      <h2>Did you know?</h2>
+      <p class="text">
+        Most diseases can be prevented or treated with a healthy lifestyle,
+        including a healthy diet, regular exercise, and adequate rest.
+      </p>
+    </div>
+    <form class="formulario">
+      <header class="header">
+        <h1>Survey Form</h1>
+      </header>
+      <fieldset  class="encuesta">
+        <div class="registro">
+          <label for="name" class="label" id="name-label">Name 
+            <input id="name" type="text" placeholder="Enter Your Name" autofocus required>
+          </label>
+        </div>
+        <div class="registro">
+          <label for="email" class="label" id="email-label">Email 
+            <input id="email" type="email"  placeholder="Enter Your Email" required>
+          </label>
+        </div>
+        <div class="registro">
+          <label for="number" class="label" id="number-label">Age
+            <input  id="number" type="number" min="12" max="100"   placeholder="How old are you?" required>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="selection">
+        <h3 class="h3">What is your favorite sport?</h3>
+        <select id="dropdown" name="select" class="" required>
+          <option disabled selected value>Select current role</option>
+          <option value="Football">Football</option>
+          <option value="Soccer">Soccer</option>
+          <option value="Basketball">Basketball</option>
+          <option value="Tennis">Tennis</option>
+          <option value="Mixed Martial Arts">Mixed Martial Arts</option>
+          <option value="Volleyball">Volleyball</option>
+          <option value="Other">Other</option>
+        </select>
+      </fieldset>
+      <fieldset class="radio">
+        <h3>Do you like playing sports?</h3>
+        <label id="radiox" class="onelabel">
+          <input class="input" for="radiox" name="account-type" value="no" type="radio"/>No
+        </label>
+        <label id="radiox"  class="onelabel">
+          <input class="input" for="radiox" name="account-type" value="yes" type="radio"/>Yes
+        </label>
+        <label id="radiox"  class="onelabel">
+          <input class="input" for="radiox" name="account-type" value="Sometimes" type="radio"/>Sometimes
+        </label>
+      </fieldset>
+      <fieldset class="second-select">
+        <h3 class="h3">How often do you play sports?</h3>
+        <select id="dropdown" name="select" required>
+          <option disabled selected value>Select</option>
+          <option value="Always">Always</option>
+          <option value="Usually">Usually</option>
+          <option value="Often">Often</option>
+          <option value="Sometimes">Sometimes</option>
+          <option value="Rarely">Rarely</option>
+          <option value="Never">Never</option>
+          <option value="Other">Other</option>
+        </select>
+      </fieldset>
+      <fieldset id="checkbox">
+        <h3 class="h3">Select the topics you already know about!</h3>
+        <label id="topics" class="onelabel" required>
+            <input for="topics" class="input" value="No one" type="checkbox"/>None
+        </label>
+        <label id="topics" class="onelabel">
+          <input for="topics" class="input" value="Alimentos y nutrición" type="checkbox"/>Food and nutrition.
+        </label>
+        <label id="topics" class="onelabel">
+          <input for="topics" class="input" value="Aptitud física y ejercicio" type="checkbox"/>Physical fitness and exercise.
+        </label>
+        <label id="topics"  class="onelabel">
+          <input for="topics" class="input" value="Aptitud física y ejercicio" type="checkbox"/>Wellness and lifestyle.
+        </label>
+        <label id="topics" class="onelabel">
+          <input for="topics" class="input" value="Mindfullness" type="checkbox"/>Mindfulness.
+        </label>
+      </fieldset>
+      <fieldset id="checkboxx">
+        <h3 class="h3">Any comments or suggestions?</h3>
+        <label>
+          <textarea class="antepenultimate" cols="20" rows="1" placeholder="write" required></textarea>
+        </label>
+      </fieldset>
+      <div class="boton">
+        <!--===============G=================-->
+        <button type="submit" id="submit">
+          SUBMIT
+        </button>
+      </div>
+    </form>
+  </section> 
+</body>
+</html>

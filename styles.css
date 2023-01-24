@@ -1,0 +1,247 @@
+/*<!--===============G=================-->*/
+:root{
+ /*<!--===============COLORS - BODY=================-->*/
+    --first: rgba(150, 150, 150,.35);
+    --second: rgba(90, 90, 90,.40);
+/*<!--===============COLORS - HOVER=================-->*/
+    --hover-active:#462a3d; 
+/*<!--===============DESCRIPTION - COLORS=================-->*/
+    --one: rgba(100, 100, 100, 0.4);
+    --two: rgba(245, 240, 218, 0.4);
+/*<!--===============FORMU - COLORS=================-->*/
+    --formu: rgba(245, 240, 218, 0.45);
+    --formulario: rgba(245, 240, 218, 0.5);
+
+    --basic-one: ghostwhite;
+    --basic-two: gray;
+/*<!--===============BUTTON - COLORS=================-->*/ 
+    --gradien-one: rgba(50,50,50);
+    --gradient-two: rgba(245, 206, 238, 0.5);
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-image: linear-gradient(
+        var(--first),
+        var(--second)
+    ), url(https://somoscommunitycare.org/wp-content/uploads/2019/03/fruits_veggies_web_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    text-align: center;
+}
+.header{
+    margin: 0.5%;
+    padding: 0.5%;
+    text-align: center;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+.description{
+    margin: 0.5%;
+    padding: 0.5%;
+    text-align: center;
+    width: 85%;
+    background:
+    linear-gradient(var(--one), var(--two));
+    border-bottom: 1px solid var(--basic-two);
+    border-radius: 10px;
+}
+.text{
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-shadow: var(--basic-one);
+}
+.formulario{
+    background:
+     linear-gradient(var(--formu), var(--formulario));
+    border-radius: 10px;
+    width: 85%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.encuesta{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 0 1% 0;
+    border-color: transparent;
+}
+.registro{
+    text-align: center;
+    margin: 1%;
+    padding: 0.5%;
+}
+.label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+#name{
+    width: 50%;
+    margin: 1%;
+    border: none;
+    padding: 2% 1% 1% 2%;
+    font-size: 1rem;
+}
+#email{
+    width: 50%;
+    margin: 1%;
+    border: none;
+    padding: 2% 1% 1% 2%;
+    font-size: 1rem;
+}
+#number{
+    width: 20%;
+    margin: 1%;
+    border: none;
+    padding: 2% 1% 1% 2%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: transparent;
+}
+.h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+}
+#dropdown{
+    padding: 1%;
+    font-size: 1rem; 
+    cursor: pointer;
+}
+.radio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: transparent;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.onelabel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0.5%;
+    padding: 0.5%;
+    cursor: pointer;
+}
+.second-select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: transparent;
+}
+#checkbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: transparent;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.input{
+    padding: 0.5%;
+    margin: 0.5%;
+    cursor: pointer;
+}
+#checkboxx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: transparent;
+}
+.antepenultimate{
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#submit{
+    margin: 1%;
+    padding: 2% 1% 1% 2%;
+    width: 30%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: linear-gradient(var(--gradien-one), var(--gradient-two));
+    cursor: pointer;
+}
+#submit:hover{
+    background:  var(--hover-active);
+   
+}
+#submit:active{
+    box-shadow: 2px 2px 5px var(--hover-active);
+}
+/*<!--===============G=================-->*/
+@media all and (max-width:400px) {
+    #name{
+        width: 70%;
+        margin: 0.5%;
+        font-size: 1rem;
+    }
+    #email{
+        width: 70%;
+        margin: 0.5%;
+        font-size: 1rem;
+    }
+    #number{
+        width: 60%;
+        margin: 0.5%;
+        font-size: 1rem;
+    }
+    .onelabel{
+        width: 100%;
+        text-align: left;
+    }
+    #submit{
+        width: 70%;
+        margin: 0 0 2% 0;
+    }
+}
+@media all and (max-width:728px){
+    #name{
+        width: 60%;
+    }
+    #email{
+        width: 60%;
+        margin: 0.5%;
+    }
+    #number{
+        width: 60%;
+        margin: 0.5%;
+    }
+    .onelabel{
+        width: 100%;
+        text-align: left;
+    }
+    #submit{
+        width: 70%;
+        margin: 0 0 2% 0;
+    }
+}
+/*<!--===============G=================-->*/
